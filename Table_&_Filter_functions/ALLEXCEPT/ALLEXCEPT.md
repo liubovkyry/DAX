@@ -6,3 +6,7 @@ in the query.
 So another way to think about this function is to say that it removes filters from a table, except
 
 for columns that we specifically ask it not to remove filters from.
+
+So basically all except can access other columns within the expanded version of that base table.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/5ac7096d-b62f-4aaf-8762-0cc06df9bfa6)
