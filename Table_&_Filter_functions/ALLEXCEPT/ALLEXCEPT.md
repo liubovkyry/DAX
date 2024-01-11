@@ -22,3 +22,13 @@ And while the transaction date and sales outlet ID columns don't physically live
 table, we can access them because they're on the one side of the relationship and therefore they're
 
 part of the expanded table, the expanded version of sales based on this measure.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/498aafb5-b8f4-4ced-9d68-0b19a0ff4d06)
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/d57f5d2e-b094-44ba-9c39-ab2eae0005fb)
+
+The Customer Sales measure is changing with this additional filter context, but because we are clearing
+
+all filters except for our product group and our date, the Castomer Sales (ALLEXCEPT) column won't update based on any additional
+
+filter selection.
