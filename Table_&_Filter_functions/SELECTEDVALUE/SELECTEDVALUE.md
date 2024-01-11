@@ -57,3 +57,6 @@ down to a single unique value based on the filter context of the matrix before w
 BI and actually check this function out, it may be helpful to think of selected value using a slightly
 
 different term.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/bec1f88a-b6ab-4e54-9025-cf0145dc8e82)
+
