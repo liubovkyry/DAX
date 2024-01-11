@@ -60,3 +60,17 @@ different term.
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/bec1f88a-b6ab-4e54-9025-cf0145dc8e82)
 
+![image](https://github.com/liubovkyry/DAX/assets/118057504/bfdb8591-3da6-4728-8881-51dc5401ca84)
+
+So what the selected values function is doing is it's saying that based on the current filter context.
+
+So our current filter context here is for Beverages.
+
+
+Well, there isn't a current retail price at the product group level for Beverages.
+
+It can't evaluate to a unique value, so it doesn't return anything.
+
+But when we drill down.
+
+These all can evaluate to a single retail price.
