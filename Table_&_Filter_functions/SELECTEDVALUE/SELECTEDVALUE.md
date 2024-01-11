@@ -23,3 +23,37 @@ will be returned by default.
 So some examples here of alternate results could be something like using a dash or writing Na for not
 
 applicable.
+
+Let's take a look at a quick example here.
+
+And here we have a matrix with product groups and product names, and the values we're looking at are
+
+customer sales, quantity sold using selected value and retail price, using selected value and looking
+
+at the product group rows.
+
+So the bolded rows, you can see that there isn't a value for the quantity sold or the retail price.
+
+See, those values are missing here.
+
+And the reason why these blanks are showing up is because this expression doesn't evaluate to a single
+
+unique result.
+
+Right?
+
+And that's why nothing is returned.
+
+So in this case, if we look at the add on product group, we have caramel syrup, chocolate syrup,
+
+hazelnut syrup and our sugar free vanilla syrup products below in that group, each one of those has
+
+a unique retail price.
+
+So that's why for each of those rows, we're actually returning values because the product can be filtered
+
+down to a single unique value based on the filter context of the matrix before we head over to Power
+
+BI and actually check this function out, it may be helpful to think of selected value using a slightly
+
+different term.
