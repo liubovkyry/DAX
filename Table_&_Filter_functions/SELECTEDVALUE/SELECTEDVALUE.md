@@ -74,3 +74,6 @@ It can't evaluate to a unique value, so it doesn't return anything.
 But when we drill down.
 
 These all can evaluate to a single retail price.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/50f983df-3e52-45ce-9457-0fec6fa5102a)
+
