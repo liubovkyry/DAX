@@ -77,5 +77,17 @@ These all can evaluate to a single retail price.
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/25bb580c-5518-42d6-b48e-69e4c65ba6d1)
 
+What we were able to do with that function is we were able to return the quantity sold for the individual
 
+products.
+
+
+We were able to divide the retail price based on the customer sales in the instances where a single
+
+value could be determined.
+
+
+So that's why we're still not seeing the quantity sold or retail price at the group level.
+
+We're seeing them at the individual product level.
 
