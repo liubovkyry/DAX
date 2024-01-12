@@ -32,3 +32,12 @@ integer or string.
 So some examples here could be something like employee ID or the concatenation of an employee's first
 
 name and their last name.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/ee9e8442-dc55-4a8e-820b-471aeb88f65c)
+
+The select columns function can accept physical tables or it can accept virtual tables.
+
+So let's use a filter function and I want to return the same employees lookup table.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/392c1044-e43b-429a-9752-5ff870a1e501)
+
