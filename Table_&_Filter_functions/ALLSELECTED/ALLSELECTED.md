@@ -45,3 +45,22 @@ context.
 So in our case, the slicer is updating that filter context when we make new selections.
 
 Additionally, the date filter when we select that will also influence this all selected total.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/4a9c047d-8ea4-49e7-91c9-3a08ceafa1da)
+
+1)
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/5be91255-1de7-43ed-8f86-56ab5a0dc155)
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/8f54e226-6dd4-4fc3-81d2-c2177d0e5bff)
+
+2)
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/ba797aec-1d55-4943-a9b6-91552b5c607f)
+![image](https://github.com/liubovkyry/DAX/assets/118057504/920ad725-925d-4796-9e18-3d59d8ca9667)
+
+3)
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/34c4b51d-6b5a-4044-a38b-ec40223e1d3c)
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/3d0dac84-3896-46f9-bd92-ee9324eb3190)
