@@ -16,7 +16,7 @@ Additionally, if you choose to remove filters from a column, you have the option
 
 one column you'd like to remove the filters from, but they have to be from the same base table.
 
-Pro tip here.
+### Pro tip here.
 
 Remove filters is actually an alias for the ALL function and works identical to the ALL function.
 
