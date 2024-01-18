@@ -64,11 +64,11 @@ you could always use values to check.
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/70f04099-4fa7-4d3b-8348-0937ca07bf70)
 
-1) First objective, we need to check if the ginger scone product actually exists in the data model.
+   1) First objective, we need to check if the ginger scone product actually exists in the data model.
 
 So for that, let's head over to our data view and I want to look at the product table and filter products.
 
-2)Second objective we need to use counting functions plus distinct and values to create a view that shows
+   2) Second objective we need to use counting functions plus distinct and values to create a view that shows
 
 the blank row.
 
@@ -99,6 +99,6 @@ Number two is using those counting functions plus distinct and values to create 
 
 blank row.
 
-3) The third thing is we need to create a new visual to show the missing product ID when the blank product
+   3) The third thing is we need to create a new visual to show the missing product ID when the blank product
 
 is selected.
