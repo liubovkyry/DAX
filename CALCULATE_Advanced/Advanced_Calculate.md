@@ -38,6 +38,8 @@ know that I need to create a filter context here to produce the right numbers.
 ## Evaluation Order
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/a2cac943-9789-4c3c-912d-218f1d164082)
+## CALCULATE modifiers
+![image](https://github.com/liubovkyry/DAX/assets/118057504/bf17cd64-ce6c-47c9-8ed0-dc8ff77c750c)
 
 ## REMOVEFILTERS (See dedicated file)
 ## KEEPFILTERS (See dedicated file)
