@@ -8,4 +8,5 @@ When encounter this type of error, the VALUES function might be useful
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/754b0cea-4f56-4b56-910c-384f9582283f)
 
-![image](https://github.com/liubovkyry/DAX/assets/118057504/26ef2249-1b3e-476f-ab1d-d1d6e634dd73)
+![image](https://github.com/liubovkyry/DAX/assets/118057504/b3cfc48e-daa8-459b-a0d5-8c50e5948b4e)
+
