@@ -15,3 +15,13 @@ store lookup table.
 Additionally, if you choose to remove filters from a column, you have the option to name more than
 
 one column you'd like to remove the filters from, but they have to be from the same base table.
+
+Pro tip here.
+
+Remove filters is actually an alias for the ALL function and works identical to the ALL function.
+
+When you're clearing filters from a specified table or a column.
+
+However, remove filters can only be used as a calculate modifier and not as a table function like ALL
+
+can.
