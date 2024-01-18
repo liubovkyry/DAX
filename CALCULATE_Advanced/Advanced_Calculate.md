@@ -40,6 +40,7 @@ know that I need to create a filter context here to produce the right numbers.
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/a2cac943-9789-4c3c-912d-218f1d164082)
 ## CALCULATE modifiers
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/bf17cd64-ce6c-47c9-8ed0-dc8ff77c750c)
+![image](https://github.com/liubovkyry/DAX/assets/118057504/7a3342fd-ca4e-474d-9e22-c2b0fc319448)
 
 ## REMOVEFILTERS (See dedicated file)
 ## KEEPFILTERS (See dedicated file)
