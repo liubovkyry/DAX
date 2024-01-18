@@ -60,6 +60,10 @@ different term.
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/bec1f88a-b6ab-4e54-9025-cf0145dc8e82)
 
+So instead of just writing selected value customer first name, we're writing if has one values customer
+
+first name return a unique list using values of the customer first name.
+
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/bfdb8591-3da6-4728-8881-51dc5401ca84)
 
 So what the selected values function is doing is it's saying that based on the current filter context.
