@@ -25,3 +25,9 @@ When you're clearing filters from a specified table or a column.
 However, remove filters can only be used as a calculate modifier and not as a table function like ALL
 
 can.
+
+And it's really beneficial for other inputs like computing the percent of profit.
+
+And honestly, that's really one of the main reasons that I use remove filters or tend to it's when
+
+I want it to serve as an input to another measure to calculate the percent of total.
