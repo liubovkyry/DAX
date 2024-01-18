@@ -44,5 +44,10 @@ know that I need to create a filter context here to produce the right numbers.
 
 ## REMOVEFILTERS (See dedicated file)
 ## KEEPFILTERS (See dedicated file)
+
 ## TASK
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/aac91e81-746a-4c68-b94d-ec67acd10493)
+
 ## PROTIP
+![image](https://github.com/liubovkyry/DAX/assets/118057504/9e8acce1-d7b1-492e-8749-8e8516a1aa24)
