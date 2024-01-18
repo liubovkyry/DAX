@@ -60,3 +60,45 @@ In a data model, values will always show the blank row, but distinct will not.
 If you think you might have a missing value in your lookup table or you're not sure,
 
 you could always use values to check.
+
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/70f04099-4fa7-4d3b-8348-0937ca07bf70)
+
+1) First objective, we need to check if the ginger scone product actually exists in the data model.
+
+So for that, let's head over to our data view and I want to look at the product table and filter products.
+
+2)Second objective we need to use counting functions plus distinct and values to create a view that shows
+
+the blank row.
+
+```
+Count of Product ID (DISTINCT) = 
+COUNTROWS(
+    DISTINCT(
+        'Product Lookup'[product_id]
+    )
+)
+
+Count of Product ID (VALUES) = 
+COUNTROWS(
+    VALUES(
+        'Product Lookup'[product_id]
+    )
+)
+
+```
+
+If put two measures in a matrix You will see a little bit of a different view here where we have 87 total and we now have a blank product
+
+row at the top here. (Compared with Distinct formula)
+
+So that's our key objective.
+
+Number two is using those counting functions plus distinct and values to create a view that shows the
+
+blank row.
+
+3) The third thing is we need to create a new visual to show the missing product ID when the blank product
+
+is selected.
