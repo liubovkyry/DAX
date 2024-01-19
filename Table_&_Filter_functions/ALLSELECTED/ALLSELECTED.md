@@ -67,6 +67,18 @@ That total 100% based on a slicer selection of product type.
 
 of Total Baked and then answer the question Which food item is baked the most for store eight?
 
+And now we need to compare the percent of all baked to the percent of total baked.
+
+We want to remove any filter context here so we could use one of two functions.
+
+We could use REMOVEFILTERS or ALL.
+
+In this case, I like using the REMOVEFILTERS.
+
+Let's calculate modifier.
+
+It tells you exactly what it's doing and we want to remove filters from food inventory.
+
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/34c4b51d-6b5a-4044-a38b-ec40223e1d3c)
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/3d0dac84-3896-46f9-bd92-ee9324eb3190)
