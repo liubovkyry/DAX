@@ -44,4 +44,5 @@ It does not allow for any sort of table or column references or expressions or a
 
 even some very, very simple mathematical operation, like two minus one.
 
-![image](https://github.com/liubovkyry/DAX/assets/118057504/7bca3203-dbad-41d5-b999-dfdbc9b69c40)
+![image](https://github.com/liubovkyry/DAX/assets/118057504/4b295848-3e2c-4b37-bcaa-00829d79ec61)
+
