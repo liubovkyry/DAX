@@ -8,3 +8,7 @@
 ROW has two parameters
 
 that are used in pairs that are both repeatable, depending on how many columns you would like to create.
+
+Keep in mind that when you're using row, you'll most likely use it along with another function like
+
+GENERATE or GENERATESERIES as an input when you're fabricating data.
