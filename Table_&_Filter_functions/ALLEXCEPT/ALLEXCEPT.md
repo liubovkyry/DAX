@@ -55,6 +55,6 @@ And I want to filter this based on a top end result by customers sales.
 
 
 
-![image](https://github.com/liubovkyry/DAX/assets/118057504/efd716f6-f739-4321-9310-0d24b307b67a)
+![image](https://github.com/liubovkyry/DAX/assets/118057504/3c2153c9-9c8c-4132-a282-c70d824efa27)
 
 
