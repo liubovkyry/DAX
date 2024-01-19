@@ -58,3 +58,6 @@ And I want to filter this based on a top end result by customers sales.
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/3c2153c9-9c8c-4132-a282-c70d824efa27)
 
 
+So, for our top ten customers For the year of 2018, they spent $17,950, which equates to 2.8%
+
+of the total sales for store rate for that same time period.
