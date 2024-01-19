@@ -48,18 +48,24 @@ Additionally, the date filter when we select that will also influence this all s
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/4a9c047d-8ea4-49e7-91c9-3a08ceafa1da)
 
-1)
+1)  So our first key objective is to create two measures one for total baked and one for total sold.
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/5be91255-1de7-43ed-8f86-56ab5a0dc155)
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/8f54e226-6dd4-4fc3-81d2-c2177d0e5bff)
 
-2)
+2) So up next, key objective two is we need to create measures for percent of total baked and percent
+
+of total sold.
+
+That total 100% based on a slicer selection of product type.
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/ba797aec-1d55-4943-a9b6-91552b5c607f)
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/920ad725-925d-4796-9e18-3d59d8ca9667)
 
-3)
+3) Our third key objective is to now build a visual to compare the percent of all baked to the percent
+
+of Total Baked and then answer the question Which food item is baked the most for store eight?
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/34c4b51d-6b5a-4044-a38b-ec40223e1d3c)
 
