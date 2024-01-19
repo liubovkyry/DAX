@@ -22,3 +22,6 @@ A better approach would be to use something like the Add columns function.
 They're being combined in a way that is showing all of the distinct or all of the unique combinations
 
 of these two columns.
+
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/3f901532-869a-465c-a253-8df5df8bb16a)
