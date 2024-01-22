@@ -21,3 +21,24 @@ we want to move back one month.
 So as a result, we'd be looking to understand the intersection of these two tables or the records that
 
 appear within both of them.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/a1568d70-89dd-49f9-9d03-f96d71618235)
+
+It gives us an understanding of what we can do to use Intersect to combine two tables.
+
+Well, let's take this one step further and actually add in a column to this, right?
+
+So let's say we wanted to see the amount of customer revenue that each one of our employees had driven.
+
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/f71daf40-2a91-410d-87fd-56d99668f8d2)
+
+
+
+
+
+So we're seeing here that each table argument of Intersect must have the same number of columns.
+
+![Uploading image.png…]()
+
+So what we actually have to do is add in another add columns below here to our right table.
