@@ -73,3 +73,21 @@ from this revenue and profit variable would actually show all of the revenue and
 
 all of the customers that are in that returning customer set.
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/a2a3bc0c-d772-4338-9a9c-937ca7e2b2d0)
+
+3) The last portion here that we need to do is we need to calculate the totals for this group.
+
+And in order to do that, we're going to actually head over to the report view and quickly create two
+
+measures.
+
+So first up we create a new measure and I'm going to call this revenue.
+
+This is going to be intersect.
+
+Assignment.
+
+And this is going to equal some of our repeat customer sales revenue.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/b7cda076-36dd-419c-ae87-a2ed00047dc9)
+
+
