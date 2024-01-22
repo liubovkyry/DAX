@@ -39,6 +39,7 @@ So let's say we wanted to see the amount of customer revenue that each one of ou
 
 So we're seeing here that each table argument of Intersect must have the same number of columns.
 
-![Uploading image.png…]()
+![image](https://github.com/liubovkyry/DAX/assets/118057504/3eafa5ec-68c8-452a-93f4-b33972302fb1)
+
 
 So what we actually have to do is add in another add columns below here to our right table.
