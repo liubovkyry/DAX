@@ -38,4 +38,4 @@ So this is based on the baked date is a little bit different than the quantity s
 
 date.
 
-So let's add in our month name here.
+Thats because We started receiving pastries for our stores before we actually opened. And Calendar table starts with the day of the first transaction.
