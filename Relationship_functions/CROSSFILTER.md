@@ -10,5 +10,10 @@ measure that you're using it in.
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/a8433574-06ca-417f-92c2-35da0b10755a)
 
+
+
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/52278c19-2318-44ac-a3b5-f8da727086b6)
 
+
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/cfa97cbb-74a0-40d0-9a79-731d156f7477)
