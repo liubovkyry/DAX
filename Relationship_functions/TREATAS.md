@@ -103,3 +103,70 @@ also exist within this table are returned.
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/48c053e5-cdea-4cbe-80fc-4d89a7086ac8)
 
 
+
+So our first key objective here is based on the target sales union table.
+
+We need to use TREATAS and create measures for the bean/tea, beverage, merchandise and food sales goals.
+
+One of the first things that we need to understand here is that the union demo table is going to be
+
+connected to the calendar table at the year and month level.
+
+And at the same time, we also want to sum each of our category goals, right?
+
+So in order to do that, we actually need to start off by using a CALCULATE statement.
+
+So let's start off and we'll create a measure here.
+
+And this first measure, I'll call Bean goal.
+
+
+So here what we want to do is start off by calling calculate.
+
+And what we want to calculate is the sum of our bean/tea goal from our union table for our filter arguments
+
+here.
+
+This is where we want to start using TREATAS.
+
+And to do this all we need to do is start typing TREATAS and bring up this function.
+
+And the first thing that we want to do is we want to define the table expression that is going to be
+
+mapped to the unrelated columns.
+
+
+So how do we do that?
+
+Well, I like to use values here, and I'm going to use VALUES to reference the calendar.
+
+
+We need to tie to the month and the year.
+
+So I'm going to use the year ID column here.
+
+And the column that is being mapped to this table expression is going to be the Union
+
+Year column.
+
+
+
+So here we're saying this is the table expression that is going to be mapped to an unrelated column.
+
+And that unrelated column is the year column in our union demo table.
+
+Okay, So from here we need to repeat this same thing for the month level.
+
+So TREATAS VALUES.
+
+And from our calendar table we want to take the month name.
+
+And we want to map that to our Union Month name.
+
+Here we've created.
+
+Two relationships.
+
+For the year ID and the month name, and we're tying those to our union demo table, right?
+
+Because we have differing levels of granularity here.
