@@ -99,3 +99,7 @@ also exist within this table are returned.
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/63901105-8c4e-4ba0-a3e6-f7f5c123179b)
 
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/48c053e5-cdea-4cbe-80fc-4d89a7086ac8)
+
+
