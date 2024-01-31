@@ -124,7 +124,7 @@ CALCULATE(
 )
 ```
 
-So our first key objective here is based on the target sales union table.
+1)  So our first key objective here is based on the target sales union table.
 
 We need to use TREATAS and create measures for the bean/tea, beverage, merchandise and food sales goals.
 
@@ -263,3 +263,18 @@ We can see that we clearly have our table expression here, and then we have the 
 to return.
 
 This also makes it really easy to add additional columns top and bottom here.
+
+2) Our second key objective is to create a percent of goal measures that compare quantity sold to goal
+
+amount.
+
+```
+Beverage % to Goal = 
+DIVIDE(
+    CALCULATE(
+        SUM( 'Sales by Store'[quantity_sold]), 'Sales by Store'[Product Group] = "Beverage"), [Beverage Goal (treatas)])
+```
+
+3) Our third key objective is to add the measures that we have created in Steps one and two and create
+
+a matrix that is broken down by store and target month that contains these measures.
