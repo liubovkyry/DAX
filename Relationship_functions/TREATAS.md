@@ -103,6 +103,26 @@ also exist within this table are returned.
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/48c053e5-cdea-4cbe-80fc-4d89a7086ac8)
 
 
+```
+Bean Goal (treatas) = 
+CALCULATE(
+    SUM(
+        'UNION Demo'[Bean/Teas Goal]
+    ),
+    TREATAS(
+        Values(
+            'Calendar'[Year_ID]
+        ),
+        'UNION Demo'[Year]
+    ),
+    TREATAS(
+        Values(
+            'Calendar'[Month_Name]
+        ),
+        'UNION Demo'[Month]
+    )
+)
+```
 
 So our first key objective here is based on the target sales union table.
 
@@ -170,3 +190,70 @@ Two relationships.
 For the year ID and the month name, and we're tying those to our union demo table, right?
 
 Because we have differing levels of granularity here.
+
+```
+Merchandise Goal (treatas) = 
+CALCULATE(
+    SUM(
+        'UNION Demo'[Merchandise Goal]
+    ),
+    TREATAS(
+        Values(
+            'Calendar'[Year_ID]
+        ),
+        'UNION Demo'[Year]
+    ),
+    TREATAS(
+        Values(
+            'Calendar'[Month_Name]
+        ),
+        'UNION Demo'[Month]
+    )
+)
+```
+
+
+But there is another little challenge here for our key objective one and there was a bonus here to use
+
+SUMMARISE with TREATAS.
+
+So let's actually take a look at how we could do that.
+
+So our syntax here still stays the same where we want to use TREATAS.
+
+But instead of using VALUES here, let's use SUMMARISE.
+
+And what we want to call first is the table expression, right?
+
+We're using SUMMARISE.
+
+This is our table expression.
+
+We want to call the fields that we want to map.
+
+So the first parameter of summarize here is the table, which is our calendar table, and then the different
+
+columns that we want to add in are going to be the year ID.
+
+And then the month name.
+
+```
+Merchandise Goal (treatas) = 
+CALCULATE(
+    SUM(
+        'UNION Demo'[Merchandise Goal]
+    ),
+    TREATAS(
+        SUMMARIZE(
+            'Calendar',
+            'Calendar'[Year_ID],
+            'Calendar'[Month_Name]
+        ),
+        'UNION Demo'[Year],
+        'UNION Demo'[Month]
+    )
+)
+ ```
+
+
+So now we've accomplished that exact same thing, but instead this is a much more readable format.
