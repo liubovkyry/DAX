@@ -278,3 +278,21 @@ DIVIDE(
 3) Our third key objective is to add the measures that we have created in Steps one and two and create
 
 a matrix that is broken down by store and target month that contains these measures.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/2643606a-8dad-4dab-aeaf-03130d5ca87c)
+
+
+
+So what we want to do is actually filter this for April.
+
+In March of 2019.
+
+And now you can see here that we have appropriate totals along for each store along with each of the
+
+months.
+
+Right.
+
+So looking at our being percent of goal here, we see that we were roughly 5% above our March goal.
+
+Our April goal, we were almost 17% above for store five in March.
