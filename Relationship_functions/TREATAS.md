@@ -257,3 +257,9 @@ CALCULATE(
 
 
 So now we've accomplished that exact same thing, but instead this is a much more readable format.
+
+We can see that we clearly have our table expression here, and then we have the columns that we want
+
+to return.
+
+This also makes it really easy to add additional columns top and bottom here.
