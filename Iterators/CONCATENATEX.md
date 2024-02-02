@@ -77,3 +77,6 @@ the employee name or names selected and the percent of total sales for store fiv
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/ef49842c-f906-459a-b976-e89703e5f2cd)
 
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/ee55cc46-8be0-440d-88ab-9e5f1c2b904f)
+
