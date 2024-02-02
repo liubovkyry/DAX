@@ -75,7 +75,7 @@ So here we'll create a new measure, and I'm going to call this percent of custom
 
 the employee name or names selected and the percent of total sales for store five.
 
-![image](https://github.com/liubovkyry/DAX/assets/118057504/ef49842c-f906-459a-b976-e89703e5f2cd)
+
 
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/ee55cc46-8be0-440d-88ab-9e5f1c2b904f)
@@ -97,6 +97,10 @@ But what's a little bit troubling is that when we deselect this, we have our ent
 here and a lot of them don't work for store five.
 
 So how can we handle this?
+
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/83f711c6-f376-44a6-95df-9929cd018829)
+
 
 Well, let's go and update the measure here and we can actually add in if has one value.
 
