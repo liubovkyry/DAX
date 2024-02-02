@@ -17,3 +17,18 @@ Well, all we really need to do is create a measure that captures the individual 
 and then returns that output.
 
 And we can do that using concatenate X.
+So here we have a measure called selected product category that is showing the sales based on the selection
+
+within the slicer.
+
+And then we're using Concatenate X to output the selection of those values and it looks something like
+
+this.
+
+So here we can add this measure to a card which will then display the output of concatenate x, which
+
+includes the filter context from our slicer.
+
+And now we can add this around a visual so that our report consumers know exactly what the visual is
+
+showing without needing to add the product category context directly within this matrix.
