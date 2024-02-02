@@ -32,3 +32,15 @@ includes the filter context from our slicer.
 And now we can add this around a visual so that our report consumers know exactly what the visual is
 
 showing without needing to add the product category context directly within this matrix.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/85222f2a-be68-4757-8c3c-355b3de6dc87)
+
+But we want to create a little bit more of an intuitive way for our report consumers to totally understand
+
+that this visual is also being filtered by these three product categories.
+
+So let's create a new measure.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/fb8b1f6d-f32a-4dcb-a923-8fdbf62a2967)
+
+
