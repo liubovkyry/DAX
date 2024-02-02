@@ -24,3 +24,6 @@ the count of the rows in a table, something like that.
 (Calendar table is at the daily level and we want to iterate our expression, the customer sales for
 
 every day.)
+
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/5a4354ff-f1e0-42f6-8a40-c4478cd7f050)
