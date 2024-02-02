@@ -47,3 +47,33 @@ So let's create a new measure.
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/84d2c64d-cc31-430d-8b74-5fd516142547)
 
 
+So our first key objective here is to create a visual for store five that shows customer sales by store
+
+and employee ID.
+
+Let's add the matrix with store ID and our sales.
+
+Let's filter this matrix.
+
+Store ID equals five.
+
+And now let's add in our employee ID, and this is the staff ID From our employee lookup.
+
+
+2)
+
+Number two is to create a measure to show percent of total sales for store five.
+
+So here we'll create a new measure, and I'm going to call this percent of customer sales.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/a2e9dd01-caef-4f59-bc94-beca0e482f57)
+
+3)
+
+
+ Key objective number three is to use concatenate to define a measure that shows
+
+the employee name or names selected and the percent of total sales for store five.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/ef49842c-f906-459a-b976-e89703e5f2cd)
+
