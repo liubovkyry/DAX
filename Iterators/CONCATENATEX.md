@@ -80,3 +80,25 @@ the employee name or names selected and the percent of total sales for store fiv
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/ee55cc46-8be0-440d-88ab-9e5f1c2b904f)
 
+
+
+And that's really what this whole third objective is about, is using Concatenate X to define a measure
+
+that shows the employee names, plus the percentage of sales that they drove for store five.
+
+And when we make a selection, we're clearly able to see that.
+
+Or multiple selections.
+
+We're able to see the employees listed out in that way, right?
+
+But what's a little bit troubling is that when we deselect this, we have our entire list of employees
+
+here and a lot of them don't work for store five.
+
+So how can we handle this?
+
+Well, let's go and update the measure here and we can actually add in if has one value.
+
+
+
