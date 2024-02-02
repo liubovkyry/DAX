@@ -44,3 +44,6 @@ So let's create a new measure.
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/fb8b1f6d-f32a-4dcb-a923-8fdbf62a2967)
 
 
+![image](https://github.com/liubovkyry/DAX/assets/118057504/84d2c64d-cc31-430d-8b74-5fd516142547)
+
+
