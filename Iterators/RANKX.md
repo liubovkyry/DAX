@@ -70,3 +70,71 @@ IF(
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/ce3a0369-da32-456c-aa92-23543d83f51d)
 
+
+
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/933947ca-93c7-4fde-94e4-26227123d4a7)
+
+
+```
+Top 5 products by profit (rankx) = 
+VAR ProfitRank = 
+IF(
+    HASONEVALUE(
+    'Product Lookup'[product_category]
+    ),
+    RANKX(
+        ALL(
+            'Product Lookup'[product]
+        ),
+        [Customer Sales] - [Cost]
+    )
+    )
+VAR Top5products = 
+IF(
+    ProfitRank <= 5, 
+[Profit]
+)
+RETURN Top5products
+```
+
+
+1) So our first key objective here is that we need to use variables and rank X to create a single measure for our top five products.
+
+    So we're going to create a top five products measure.
+
+   We need to create variables here.
+
+ - So the first variable that I want to create is the profit rank.
+
+That's going to be the first input to determining the top five as we first need to determine the total profit rank for all of the rows within the table.
+
+So I'm going to use the IF and  HASONEVALUE functions first and we want to look at this at the product category, right?
+
+I want to say if my product category has one value, that's because ultimately that's what we're going to be filtering By then.
+
+I'm going to return the rank of the product column.
+
+We'll do product category here.
+
+And now I can add in my RANKX function similar to the demo we're going to use all here and we want to clear ALL the filters from Product lookup - product.
+
+And now the expression that we want to evaluate is we're looking for profit, right?
+
+So we could do profit or customer sales minus cost, you know, either way.
+
+So let's do customer sales minus cost.
+ 
+ -  The next variable that we want to create is where we want to define the top five products.
+
+And for this we can use a pretty straightforward, logical statement.
+
+So we can use IF and what we want to say here is If the profit rank Is less than or equal to five, then we want to return  profit.  Otherwise, nothing.
+
+
+ 2) Our second key objective is to create a slicer for product category to be able to analyze the top five
+
+products across different categories.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/a00c419f-3c08-4ff2-8380-e616f11860fa)
+
