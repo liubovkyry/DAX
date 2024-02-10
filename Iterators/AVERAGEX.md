@@ -208,7 +208,7 @@ And our filter - It's going to be PeriodInVisual.
 
 
 
-And we're going to create a line and clustered column chart that is going to look at the transaction
+<!-- And we're going to create a line and clustered column chart that is going to look at the transaction
 
 date, customer sales and our average sales.
 
