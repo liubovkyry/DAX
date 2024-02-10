@@ -228,4 +228,56 @@ Our average sales for the last 30 days was $6,147.
 
 
 
-So that's how you create a moving average using average and some variables. 
+So that's how you create a moving average using average and some variables.
+
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/00656ad0-e767-45e4-93be-22adcacd32e3)
+
+
+1) Our first key objective is to create a matrix to show total and daily average profit by month for January
+
+2018 through April 2019.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/6944bb34-16e2-4090-8ebf-2727330020d6)
+
+
+
+2) Our second key objective is to use generate series and selected value to create a parameter with increments
+
+of seven days over a nine week period. So order of operations matters here.
+
+And what we actually want to do is we want to create a table, right?
+
+Let's create a new table.
+
+And this table is going to equal a series that starts at seven.
+
+Mark has requested to be able to look at this at a weekly level for nine weeks.
+
+So we want to start with one week. The end value is going to be 63, 9 weeks times 7, 63, and the increment is also going to be
+
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/0f3c6e32-8d67-4ebc-b5b2-f29cf972201b)
+
+
+```
+Average Days Value = 
+SELECTEDVALUE(
+    'Average Days'[Value],
+28
+)
+```
+
+The second thing that we need to do here is create a measure for the average days value.
+
+
+So if we find our average days table, we want to create a new measure within this table.
+
+And I'm going to call this Average days value.
+
+And this is going to equal the SELECTEDVALUE Of the average days table.
+
+The value and for here we don't have to necessarily specify an alternate result, but let's put 28. (We'll do four week period here.)
+
+
+3) Our third key objective is to create a measure using average X and the parameter we've just defined to calculate the moving average profit.
