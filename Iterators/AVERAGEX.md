@@ -208,33 +208,13 @@ And our filter - It's going to be PeriodInVisual.
 
 
 
-<!-- And we're going to create a line and clustered column chart that is going to look at the transaction
+ And we're going to create a line and clustered column chart that is going to look at the transaction
 
 date, customer sales and our average sales.
 
-All right.
 
-So we'll add this visual in and.
+![image](https://github.com/liubovkyry/DAX/assets/118057504/d4e8db37-d54c-48bb-af91-77b0f3dd7b75)
 
-Let's grab our transaction date.
-
-From the calendar table, and we'll put this on our shared axes.
-
-Next up, customer sales, grab our customer sales measure and throw this on the column values.
-
-All right.
-
-So now we have all of our.
-
-Customer sales trended out by day.
-
-And the last piece here we can do is we'll add in our moving average.
-
-Sales to our line values.
-
-Right.
-
-So there we go.
 
 Now we have a 30 day moving average that is layered over our sales, right?
 
@@ -244,8 +224,8 @@ So here on June 16th, 2018, our moving average for the last 30 days, our average
 
 We check out another value here November 30th, 2018.
 
-Our average sales for the last 30 days was $6,146.
+Our average sales for the last 30 days was $6,147.
 
-Right?
 
-So that's how you create a moving average using average and some variables. -->
+
+So that's how you create a moving average using average and some variables. 
