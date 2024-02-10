@@ -93,77 +93,81 @@ And this would let you create a dynamic user defined period that would automatic
 visual.
 
 
+```
+Moving Average (averagex) = 
+VAR LastTrasDate = MAX('Calendar'[Transaction_Date])
+VAR AvgDays = 30
+VAR PeriodInVisual = 
+FILTER(
+    ALL(
+        'Calendar'[Transaction_Date]
+    ),
+    AND(
+        'Calendar'[Transaction_Date] > LastTrasDate - AvgDays,
+        'Calendar'[Transaction_Date] <= LastTrasDate
+    )
+)
+VAR OutPut = 
+CALCULATE(
+    AVERAGEX(
+        'Calendar',
+        [Customer Sales]
+    ),
+    PeriodInVisual
+)
+RETURN OutPut
 
 
+```
 
 
-
-
-<!-- Let's create our measure.
+Let's create our measure.
 
 And I'm going to call this moving average.
 
 Moving average X.
 
-The first thing that we're going to do is we're going to define those variables that we saw, right?
+1) The first thing that we're going to do is we're going to define those variables that we saw, right?
 
 So the first variable that we want to define is the last transaction date.
 
-And this is going to equal max.
+And this is going to equal MAX Calendar table of the transaction date from our calendar table.
 
-Calendar table of the transaction date from our calendar table.
 
-I'll close this out.
 
-The next variable we want to define is the average days, right?
+2) The next variable we want to define is the average days, right?
 
 So the number of days within the period that we want to look back and I'm going to set this to 30.
 
-Next up is we need to create the time period within the visual.
+
+3) Next up is we need to create the time period within the visual.
 
 So period and visual
 
-and this is where we're going to use filter.
+and this is where we're going to use FILTER. With ALL. And the calendar table. Transaction date.
 
-With all.
-
-And the calendar table.
-
-Transaction date.
-
-All right.
 
 So what we said right there is basically we're using Filter to return a table and we want it filtered
 
 based on certain parameters.
 
-And the first thing that we're doing is we're clearing all of the filters that may exist on transaction
+ - And the first thing that we're doing is we're clearing all of the filters that may exist on transaction
 
 date.
 
-The second thing that we want to do is we want to use and and allows us to create a logical expression
+ - The second thing that we want to do is we want to use and and allows us to create a logical expression
 
-that if both arguments evaluate to true, then it will return true.
+that if both arguments evaluate to true, then it will return true:
 
-So here's where we want to enter in the logical statements to basically time box this 30 day period.
+   So here's where we want to enter in the logical statements to basically time box this 30 day period.
 
 So again, this is going to be based on the calendar transaction date.
 
-And this is if it's greater than.
+AND this is if it's greater than. The last transaction date minus. The average days. 
+AND the transaction date. Is less than or equal to the last transaction date.
 
-The last transaction date minus.
 
-The average days.
-
-And the transaction date.
-
-Is less than or equal to the last transaction date.
-
-Right.
-
-Then we'll return.
-
-True.
+Then we'll return True.
 
 So what this block of code here is saying this filter parameter for filter is that let's use a specific
 
@@ -177,9 +181,7 @@ also the max date based on the current context.
 
 So this is basically saying July 28th is greater than July 28th, -30.
 
-If that's true, and if July 28th is less than or equal to July 28th, then return.
-
-True.
+If that's true, and if July 28th is less than or equal to July 28th, then return True.
 
 And because both of those evaluate to true, what we're doing is we're providing a filter here.
 
@@ -187,39 +189,24 @@ If again, if this was July 28th, we're providing a table that's filtered from Ju
 
 So that's a breakdown of exactly what's happening here within the filter parameter of this function.
 
-So now we're going to create another variable for the output.
 
-And this is where we're going to use calculate.
+4) So now we're going to create another variable for the output.
 
-Write the expression that we want to calculate is going to be the same average expression that we had
+And this is where we're going to use CALCULATE.
 
-used in a previous lecture to create the daily customer sales, Right?
+Write the expression that we want to calculate is going to be the same average expression  to create the daily customer sales.
 
-So we want to look at the calendar table and the expression is going to be customer sales.
+So we want to look at the calendar table and the expression is going to be Customer sales.
 
-And our filter.
+And our filter - It's going to be PeriodInVisual.
 
-It's going to be period and visual.
 
-So what I was saying in the slides is you could change average X here to some X or count X and change
 
-this moving average into a moving total or a moving count.
+5) And then lastly, what we need to do here is RETURN the output.
 
-And then lastly, what we need to do here is return the output.
 
-And again, once this loads, we'll change our home table.
 
-And we will format this as a currency.
 
-Two decimal places.
-
-Great.
-
-So now.
-
-We'll close this out.
-
-And I'm going to move a couple of these visuals around here.
 
 And we're going to create a line and clustered column chart that is going to look at the transaction
 
