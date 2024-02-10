@@ -28,15 +28,9 @@ every day.)
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/5a4354ff-f1e0-42f6-8a40-c4478cd7f050)
 
-Desription in Edit mode
 
-<!-- It is pro tip lecture time.
 
-And in this lecture, we're going to walk through how to create a moving average that uses average X.
 
-So this is the code that we're actually going to create in Power BI and a couple of minutes.
-
-But first, let's walk through exactly kind of what's going on here.
 
 First up, we're using variables to define certain parameters for our inputs.
 
@@ -44,15 +38,19 @@ The first one that we're using is for last transaction date, and we're using a m
 
 is going to look at our Max transaction date based on our current filter context and our visual.
 
+
+
 Next, we're defining the average days.
 
 So this is the number of days that we actually want to adjust by within the period, right?
 
 So we could update this to seven to look at the previous week, 14 for the previous two weeks, so on
 
-and so forth for the period and visual we're using filter all and and to define the time period of the
+and so forth for the period and visual we're using FILTER, ALL and AND to <b>define the time period of the
 
-rolling window.
+rolling window.</b>
+
+
 
 And the rolling window is based on the last transaction date and the current filter context of the visual
 
@@ -64,23 +62,29 @@ context.
 
 And the function is adjusting 30 days back based on that last visible transaction date.
 
-So once we have that window defined, we can then use calculate to return the average daily customer
+
+
+So once we have that window defined, we can then use CALCULATE to return the average daily customer
 
 sales for the period we've defined.
 
-And one thing to note here is that you could actually turn this moving average code into a rolling total
+And one thing to <b>note</b> here is that you could actually turn this moving average code into a rolling total
 
-or a rolling count by substituting something like some X or count X for where you see average x here
+or a rolling count by substituting something like SUMX or COUNTX for where you see AVERAGEX here
 
-below calculate.
+below CALCULATE.
 
 So you could use this to calculate a moving sum or a moving count within the same period.
 
+
+
 Lastly, we return the output of this equation to close out the measure.
 
-Pro tip here.
 
-One of the things that you can actually do is you could create a parameter and substitute that for our
+### Pro tip here 
+
+
+One of the things that you can actually do is you could create a <b>parameter</b> and substitute that for our
 
 average days, that static average day value.
 
@@ -88,13 +92,14 @@ And this would let you create a dynamic user defined period that would automatic
 
 visual.
 
-With that, let's go build this and test it out for ourselves.
 
-All right.
 
-So first things first.
 
-Let's create our measure.
+
+
+
+
+<!-- Let's create our measure.
 
 And I'm going to call this moving average.
 
