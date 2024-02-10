@@ -281,3 +281,46 @@ The value and for here we don't have to necessarily specify an alternate result,
 
 
 3) Our third key objective is to create a measure using average X and the parameter we've just defined to calculate the moving average profit.
+
+
+```
+   Moving Average Profit (assignment) = 
+VAR LastTrasDate = MAX('Calendar'[Transaction_Date])
+VAR AvgDays = [Average Days Value]                                                  --input here our parameter 
+VAR PeriodInVisual = 
+FILTER(
+    ALL(
+        'Calendar'[Transaction_Date]
+    ),
+    AND(
+        'Calendar'[Transaction_Date] > LastTrasDate - AvgDays,
+        'Calendar'[Transaction_Date] <= LastTrasDate
+    )
+)
+VAR OutPut = 
+CALCULATE(
+    AVERAGEX(
+        'Calendar',
+        [Profit]
+    ),
+    PeriodInVisual
+)
+RETURN OutPut
+```
+
+Now, the last component here is that we need to be able to provide Mark some way to update this on his own.
+
+
+
+Right now, this is just a defaulting to the 30 day period that we had set.
+
+So what we need to do is go and grab the average days column we created and add it as a slicer.
+
+And let's first grab our slicer visual and we'll add it.
+ 
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/d58e316f-6a87-4b18-b684-12c5b4ecf1cf)
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/1967c052-2fb8-49e0-a017-435ca63a2458)
+
+
