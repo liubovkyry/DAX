@@ -131,3 +131,8 @@ DIVIDE(
     [Last week sales 4-5-4 (Dateadd)])
 
   ```
+
+3) Our third key objective is to create a matrix or two to visualize your results.
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/637c9c7e-5bb0-41f6-94dd-6656bca8b8c4)
+
