@@ -41,3 +41,11 @@ One last important piece here is it's vitally important to understand how the in
 If you don't, you'll likely think something is wrong with your measure or that it's being filtered in some other way.
 
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/c277f3e2-e421-4695-9fe2-eedc840666fe)
+
+
+```
+Last YEars Sales (sameperiodlastyear) = 
+CALCULATE([Customer Sales],
+SAMEPERIODLASTYEAR('Calendar'[Transaction_Date]))
+```
+
