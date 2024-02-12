@@ -12,8 +12,29 @@ They help you enable these types of calculations. This is the reason why you nee
 
 that fiscal calendar table, because it's really the only way to reference these kinds of periods.
 
- - So after that, we jump into IF HASONEVALUE. And the purpose of this is to basically control for rows that may not contain a single fiscal quarter value like our total rows.
+ - So after that, we jump into IF HASONEVALUE. And the purpose of this is to basically control for rows that may Not Contain a single fiscal quarter value like our Total rows.
  - Next up, we have CALCULATE which is evaluating customer sales in a modified filter context where visible date and our filter context is less than or equal to the max date in the calendar table.
  - And then we're looking at the fiscal quarter year.
 
 So now we're saying if the visible date and the initial filter context equals the max period in our fiscal quarter year, then return that table.
+
+
+```
+QTD Sales (4-5-4) = 
+VAR MaxDate = MAX('4-5-4 Calendar'[Date])
+VAR MaxPeriod = MAX('4-5-4 Calendar'[FiscalQuarterYear])
+VAR Output = 
+IF(
+    HASONEVALUE(
+   '4-5-4 Calendar'[FiscalQuarterYear]),
+   CALCULATE(
+    [Customer Sales],
+    '4-5-4 Calendar'[Date] <= MaxDate,
+    '4-5-4 Calendar'[FiscalQuarterYear] = MaxPeriod),
+    "-"
+)
+RETURN Output
+```
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/7f0c84e2-1e03-497b-9231-a5dce412e26c)
+
