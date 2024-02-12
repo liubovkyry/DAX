@@ -5,4 +5,14 @@
 ![image](https://github.com/liubovkyry/DAX/assets/118057504/92e5cde8-33b9-4d4a-9651-aa7a03e68be5)
 
 
-
+```
+Last Quarter's Sales (Paralelperiod) = 
+CALCULATE(
+    [Customer Sales],
+    PARALLELPERIOD(
+        'Calendar'[Transaction_Date],
+        -1,
+    QUARTER
+    )
+)
+```
