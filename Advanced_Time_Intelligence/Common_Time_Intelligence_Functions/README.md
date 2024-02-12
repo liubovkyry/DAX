@@ -43,4 +43,5 @@ RETURN Ratio
 ```
 
 
-![image](https://github.com/liubovkyry/DAX/assets/118057504/7e25751f-0e0c-4607-a63d-73c12d563c85)
+![image](https://github.com/liubovkyry/DAX/assets/118057504/a74d91c4-f18f-471d-9b0d-d3cde1839b57)
+
