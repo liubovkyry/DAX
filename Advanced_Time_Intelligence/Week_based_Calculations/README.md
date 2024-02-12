@@ -48,3 +48,86 @@ So the whole point of this is that these types of calendars are standardizing th
 So if this was a 4 or 5 for calendar, there would be four weeks, five weeks and then four weeks.
 
 Fiscal calendars can't be used with standard time intelligence functions.
+
+
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/5f331d53-8453-47c4-a2ab-6fa408b69c1d)
+
+
+1) So our first key objective is that we need to use the 4-5-4 calendar and customer sales measure to create measures for year to date and month to date sales.
+
+   ```
+   MTD Sales (4-5-4) = 
+VAR MaxDate = MAX('4-5-4 Calendar'[Date])
+VAR MaxPeriod = MAX('4-5-4 Calendar'[FiscalMonthYear])
+VAR Output = 
+IF(
+    HASONEVALUE(
+   '4-5-4 Calendar'[FiscalMonthYear]),
+   CALCULATE(
+    [Customer Sales],
+    '4-5-4 Calendar'[Date] <= MaxDate,
+    '4-5-4 Calendar'[FiscalMonthYear] = MaxPeriod),
+    "-"
+)
+RETURN Output
+
+```
+YTD Sales (4-5-4) = 
+VAR MaxDate = MAX('4-5-4 Calendar'[Date])
+VAR MaxPeriod = MAX('4-5-4 Calendar'[FiscalYear])
+VAR Output = 
+IF(
+    HASONEVALUE(
+   '4-5-4 Calendar'[FiscalYear]),
+   CALCULATE(
+    [Customer Sales],
+    '4-5-4 Calendar'[Date] <= MaxDate,
+    '4-5-4 Calendar'[FiscalYear] = MaxPeriod),
+    "-"
+)
+RETURN Output
+```
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/959dcc90-6dd0-4781-9361-56f37da6f3f5)
+
+What's interesting here is the IF HASONEVALUE expression isn't working here. (Repeating Values)
+
+And if we go back into the measure, we can see that this actually evaluates to true.
+
+There's only one fiscal year.
+
+When we get down to 2019 and because our calendar table actually extends all the way through the end
+
+of the 2019 fiscal year, that's why we're seeing these repeating values.
+
+It's not wrong. 
+
+We can do the following:
+
+```
+YTD Sales (4-5-4) = 
+VAR MaxDate = MAX('4-5-4 Calendar'[Date])
+VAR MaxPeriod = MAX('4-5-4 Calendar'[FiscalYear])
+VAR MaxSellDate = MAX('Sales by Store'[transaction_date])
+VAR Output = 
+   CALCULATE(
+    [Customer Sales],
+    '4-5-4 Calendar'[Date] <= MaxDate,
+    '4-5-4 Calendar'[FiscalYear] = MaxPeriod,
+    'Calendar'[Transaction_Date] <=MaxSellDate)
+  
+
+RETURN Output
+```
+![image](https://github.com/liubovkyry/DAX/assets/118057504/f69d5a8f-6114-4cee-b789-522a50eb2a65)
+
+2) So our second key objective is to create a measure to compute week over week percent change.
+
+   ```
+   WOW % Change = 
+DIVIDE(
+    [Customer Sales] - [Last week sales 4-5-4 (Dateadd)],
+    [Last week sales 4-5-4 (Dateadd)])
+
+  ```
