@@ -49,3 +49,5 @@ CALCULATE([Customer Sales],
 SAMEPERIODLASTYEAR('Calendar'[Transaction_Date]))
 ```
 
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/c6254d4b-c45a-458d-96a6-18676182b84e)
