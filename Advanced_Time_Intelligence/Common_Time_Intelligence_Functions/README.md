@@ -41,3 +41,6 @@ DIVIDE(
   "-")
 RETURN Ratio
 ```
+
+
+![image](https://github.com/liubovkyry/DAX/assets/118057504/7e25751f-0e0c-4607-a63d-73c12d563c85)
